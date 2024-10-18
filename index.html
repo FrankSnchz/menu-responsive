@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/movil.css" />
+    <script
+      src="https://kit.fontawesome.com/138f20aa8b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav-movil">
+        <figure>
+          <img src="resources/logo_arriba.png" alt="" />
+        </figure>
+        <i class="fa-solid fa-bars" id="icon-menu"></i>
+      </div>
+
+      <nav>
+        <ul id="ul-menu">
+          <li><a href="">Inicio</a></li>
+          <li><a href="">Servicios</a></li>
+          <li><a href="">Nuestros Productos</a></li>
+          <li><a href="">Contáctanos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Cultivamos verduras orgánicas y las traemos a tu mesa</h1>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="title-services">
+        <h1>Nuestros servicios</h1>
+        <p>Lo que ofrecemos</p>
+      </div>
+      <div class="products">
+        <article>
+          <figure>
+            <img src="resources/icono1.png" alt="" />
+          </figure>
+          <h2>Ganado Vacuno</h2>
+          <p>
+            Carne de res producida sin ingeniería genética, uso de radiación
+            ionizante o lodos de depuradora.
+          </p>
+        </article>
+        <article>
+          <figure>
+            <img src="resources/icono2.png" alt="" />
+          </figure>
+          <h2>Productos Lácteos</h2>
+          <p>
+            Los productos lácteos como la leche, el queso y el yogur contienen
+            los nutrientes que su cuerpo necesita.
+          </p>
+        </article>
+        <article>
+          <figure>
+            <img src="resources/icono3.png" alt="" />
+          </figure>
+          <h2>Frutas de la Huerta</h2>
+          <p>
+            Cubre todo lo que necesita saber para cultivar y comercializar con
+            éxito sus propias frutas orgánicas de huerta.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <figure>
+        <img src="resources/logo_abajo.png" alt="" />
+      </figure>
+    </footer>
+
+    <script>
+      $("#icon-menu").click(function () {
+        $("#ul-menu").toggleClass("abrir_menu");
+      });
+    </script>
+  </body>
+</html>
